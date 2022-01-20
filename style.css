@@ -24,12 +24,17 @@ header {
   margin-bottom: 130px;
 }
 
-.nav-item a.nav-link {
+.navbar-light .nav-item a.nav-link {
   margin-left: 50px;
-  color: #3c3c3c !important;
+  color: #3c3c3c;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  position: relative;
+}
+
+.navbar-light .nav-item a.nav-link:hover {
+  color: #a4bc46;
 }
 
 .site-title {
@@ -55,14 +60,26 @@ a.buy-now-btn {
   color: white;
   border-radius: 10px;
   background-color: #a4bc46;
+  border: 3px solid #a4bc46;
   text-transform: uppercase;
-  padding: 18px 25px;
+  padding: 12px 19px;
 }
 
 a.buy-now-btn-top i,
 a.buy-now-btn i {
   margin-right: 5px;
 }
+
+a.buy-now-btn {
+  padding: 8px 16px;
+}
+
+a.buy-now-btn-top:hover,
+a.buy-now-btn:hover {
+  background-color: white;
+  color: #a4bc46;
+}
+
 /*===========================
 Products Section Styles
 ===========================*/
@@ -74,7 +91,14 @@ Products Section Styles
 }
 
 .single-product {
-  width: 293px;
+  padding: 10px;
+  box-shadow: 0px 0px 10px 10px #efefef;
+  border-radius: 10px;
+}
+
+.single-product img:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-out;
 }
 
 .product-img-container {
@@ -103,10 +127,6 @@ Products Section Styles
   margin: 0;
 }
 
-a.buy-now-btn {
-  padding: 10px 20px;
-}
-
 .mans-products {
   margin-top: 110px;
 }
@@ -120,6 +140,9 @@ footer {
 
 .single-row-footer {
   padding: 15px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
 .footer-left h4 {
@@ -180,7 +203,6 @@ Responsive Layout Styles
   .single-row-footer {
     margin-top: 50px;
     text-align: center;
-    padding-bottom: 0;
   }
 
   .single-row-footer p {
