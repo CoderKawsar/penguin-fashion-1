@@ -9,27 +9,11 @@ font-family: 'Roboto', sans-serif; */
 
 p {
   font-family: "Roboto", sans-serif;
+  color: #3e3e3e;
 }
 
 a {
   text-decoration: none;
-}
-
-a.buy-now-btn {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  color: white;
-  border-radius: 10px;
-  background-color: #a4bc46;
-  text-transform: uppercase;
-  padding: 18px 25px;
-  margin-top: 10px;
-}
-
-a.buy-now-btn i {
-  margin-right: 5px;
 }
 
 /*================================
@@ -62,6 +46,23 @@ header {
   margin-bottom: 25px;
 }
 
+a.buy-now-btn-top,
+a.buy-now-btn {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: white;
+  border-radius: 10px;
+  background-color: #a4bc46;
+  text-transform: uppercase;
+  padding: 18px 25px;
+}
+
+a.buy-now-btn-top i,
+a.buy-now-btn i {
+  margin-right: 5px;
+}
 /*===========================
 Products Section Styles
 ===========================*/
@@ -72,31 +73,64 @@ Products Section Styles
   margin-bottom: 40px;
 }
 
-.products .col-md-4 {
-  padding: 10px;
+.single-product {
+  width: 293px;
+}
+
+.product-img-container {
+  background-color: #f1f1f1;
+  border-radius: 20px;
 }
 
 .products img {
-  height: 293px;
-  width: 293px;
+  height: 250px;
+  width: 210px;
+  padding: 10px;
 }
 
 .product-title {
   font-family: "Roboto", sans-serif;
+  font-weight: 700;
   font-size: 24px;
   color: #363958;
-}
-
-.product-description {
-  color: #3e3e3e;
+  margin-top: 30px;
 }
 
 .product-price {
   font-size: 36px;
   font-weight: 900;
   color: #fabe4c;
+  margin: 0;
+}
+
+a.buy-now-btn {
+  padding: 10px 20px;
 }
 
 .mans-products {
-  margin-top: 100px;
+  margin-top: 110px;
+}
+
+/*==========================
+Footer Section Styles
+==========================*/
+footer {
+  margin-top: 150px;
+}
+
+.single-row-footer {
+  padding: 15px;
+}
+
+.footer-left h4 {
+  font-family: "Roboto";
+  font-weight: 700;
+  font-size: 24px;
+  color: #363958;
+}
+
+/*=========================
+Responsive Layout Styles
+=========================*/
+@media only screen and (max-width: 768px) {
 }
