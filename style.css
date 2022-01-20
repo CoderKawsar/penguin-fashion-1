@@ -133,4 +133,57 @@ footer {
 Responsive Layout Styles
 =========================*/
 @media only screen and (max-width: 768px) {
+  .navbar-brand img {
+    height: 25px;
+    width: 190px;
+  }
+
+  .navbar-toggler-icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  header {
+    margin-bottom: 100px;
+  }
+
+  .site-title {
+    margin-top: 50px;
+    font-size: 60px;
+    margin-bottom: 0px;
+  }
+
+  .header-text p {
+    margin-bottom: 30px;
+  }
+
+  .header-img {
+    margin-top: 50px;
+  }
+
+  .section-title {
+    text-align: center;
+  }
+
+  .single-product {
+    margin: 20px auto;
+  }
+
+  .mans-products {
+    margin-top: 100px;
+  }
+
+  footer {
+    margin: 100px 0px;
+  }
+
+  .single-row-footer {
+    margin-top: 50px;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .single-row-footer p {
+    margin-bottom: 0;
+  }
 }
